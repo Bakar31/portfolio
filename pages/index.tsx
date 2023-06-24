@@ -2,6 +2,7 @@ import { Education } from "@/components/Education";
 import { Experience } from "@/components/Experience";
 import { Intro } from "@/components/Intro";
 import { Sidebar } from "@/components/Sidebar/Sidebar";
+import { Skills } from "@/components/Skills";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <Intro />
         <Education />
         <Experience />
+        <Skills />
       </div>
     </main>
   );
