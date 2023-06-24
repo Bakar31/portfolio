@@ -1,4 +1,5 @@
 import { Education } from "@/components/Education";
+import { Experience } from "@/components/Experience";
 import { Intro } from "@/components/Intro";
 import { Sidebar } from "@/components/Sidebar/Sidebar";
 
@@ -9,6 +10,7 @@ export default function Home() {
       <div className="ml-72 min-h-screen bg-whiteboard text-midnight flex flex-col p-10">
         <Intro />
         <Education />
+        <Experience />
       </div>
     </main>
   );
