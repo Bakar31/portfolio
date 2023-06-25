@@ -14,4 +14,9 @@
   .iterator-section {
     @apply flex flex-col mt-4 hover:border-l-4 hover:border-tinker hover:pl-4 transition-all duration-200;
   }
+
+  .skill-card {
+    @apply relative flex flex-col items-center p-4 rounded-lg hover:shadow-lg bg-gray-100 text-tinker h-48 hover:bg-tinker hover:text-whiteboard transition-all duration-200 ease-in-out;
+  }
+
 }
