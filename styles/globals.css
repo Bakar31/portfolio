@@ -19,4 +19,7 @@
     @apply relative flex flex-col items-center p-4 rounded-lg hover:shadow-lg bg-gray-100 text-tinker h-48 hover:bg-tinker hover:text-whiteboard transition-all duration-200 ease-in-out;
   }
 
+  .details-text {
+    @apply ml-5 hover:pl-2 transition-all duration-200 ease-in-out hover:font-normal;
+  }
 }

@@ -1,5 +1,4 @@
 import { IconType } from "react-icons";
-
 export interface IGenericInstitute {
   institute: string;
   location: string;
@@ -35,3 +34,12 @@ export interface ISkillGroup {
   skills: ISkill[];
 }
 
+export interface IResearchProject {
+  type: string;
+  title: string;
+  supervisor?: string;
+  course?: string;
+  duration: string;
+  location: string;
+  details: string[];
+}
