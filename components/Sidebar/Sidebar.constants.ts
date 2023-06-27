@@ -1,8 +1,9 @@
+import { IContactInfo, ISocialLink } from "@/types";
 import { MdEmail, MdAlternateEmail } from "react-icons/md";
 import { FaFacebook, FaGithub, FaLinkedin, FaMapMarkerAlt, FaTwitter } from "react-icons/fa";
 import { BsFillTelephoneFill } from "react-icons/bs";
 
-export const contactInfos = [
+export const contactInfos: IContactInfo[] = [
   {
     InfoIcon: FaMapMarkerAlt,
     content: "Sector 14, Uttara, Dhaka 1230",
@@ -17,7 +18,7 @@ export const contactInfos = [
   },
 ];
 
-export const socialLinks = [
+export const socialLinks: ISocialLink[] = [
   {
     SocialIcon: MdEmail,
     link: "mailto:dgvai.hridoy@gmail.com",

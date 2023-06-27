@@ -70,17 +70,9 @@ import {
 import { DiFirebase } from "react-icons/di";
 import { FaRobot } from "react-icons/fa";
 import { BsListStars } from "react-icons/bs";
+import { ISkillGroup } from "@/types";
 
-interface ISkill {
-  title: string;
-  Icon: IconType;
-}
 
-interface ISkillGroup {
-  name: string;
-  BgIcon: IconType;
-  skills: ISkill[];
-}
 
 export const skillGroups: ISkillGroup[] = [
   {

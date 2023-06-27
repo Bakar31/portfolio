@@ -1,4 +1,6 @@
-export const educations = [
+import { IEducation } from "@/types";
+
+export const educations: IEducation[] = [
   {
     institute: "Rajshahi University of Engineering & Technology",
     degree: "B.Sc. in Mechatronics Engineering",
