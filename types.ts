@@ -4,6 +4,13 @@ export enum EResearchType {
   THESIS = "Undergraduate Thesis",
   LAB = "Sessional Project",
 }
+
+export enum EProjectType {
+  OPEN_APP = "Open Source Applications",
+  OPEN_LIB = "Open Source Libraries",
+  PVT_REPO = "Private Repositories",
+}
+
 export interface IGenericInstitute {
   institute: string;
   location: string;
@@ -47,4 +54,18 @@ export interface IResearchProject {
   duration: string;
   location: string;
   details: string[];
+}
+
+export interface IProjectItem {
+  title: string;
+  description: string;
+  duration: string;
+  link: string;
+  image: string;
+  tags: string[];
+}
+
+export interface IProject {
+  type: EProjectType;
+  items: IProjectItem[];
 }
