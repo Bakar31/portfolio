@@ -1,4 +1,9 @@
 import { IconType } from "react-icons";
+
+export enum EResearchType {
+  THESIS = "Undergraduate Thesis",
+  LAB = "Sessional Project",
+}
 export interface IGenericInstitute {
   institute: string;
   location: string;
@@ -35,7 +40,7 @@ export interface ISkillGroup {
 }
 
 export interface IResearchProject {
-  type: string;
+  type: EResearchType;
   title: string;
   supervisor?: string;
   course?: string;

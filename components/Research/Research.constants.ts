@@ -1,8 +1,8 @@
-import { IResearchProject } from "@/types";
+import { EResearchType, IResearchProject } from "@/types";
 
 export const researches: IResearchProject[] = [
   {
-    type: "Undergraduate Thesis",
+    type: EResearchType.THESIS,
     title: "A Hybrid Approach to Mammography Image Processing and Cancerous Lesion Classification",
     supervisor: "Sumaya Ishrat Moyeen, Asst. Prof, RUET",
     duration: "2022",
@@ -14,7 +14,7 @@ export const researches: IResearchProject[] = [
     ],
   },
   {
-    type: "Sessional Project",
+    type: EResearchType.LAB,
     title: "An IoT Based Embedded System for Automated Railway Gate Control and Monitoring",
     course: "Embedded System Sessional Project I",
     duration: "2022",
@@ -25,7 +25,7 @@ export const researches: IResearchProject[] = [
     ],
   },
   {
-    type: "Sessional Project",
+    type: EResearchType.LAB,
     title: "An Intelligent Industrial Safety and Health Monitoring System for Industry 4.0",
     course: "Embedded System Sessional Project II",
     duration: "2022",
@@ -37,7 +37,7 @@ export const researches: IResearchProject[] = [
     ],
   },
   {
-    type: "Sessional Project",
+    type: EResearchType.LAB,
     title: "A Humanoid Robot Prototype",
     course: "Mechatronics System Sessional Project",
     duration: "2017",
