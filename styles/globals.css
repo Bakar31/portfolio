@@ -24,6 +24,22 @@
   }
 
   .card-bg {
-    @apply m-0 p-0 rounded-lg bg-gray-50 flex flex-col overflow-hidden h-72 shadow-lg relative hover:shadow-2xl transition-all ease-in-out duration-200;
+    @apply m-0 p-0 z-10 rounded-lg bg-gray-50 flex flex-col overflow-hidden w-64 h-72 shadow-lg relative;
+  }
+
+  .carousel-btn-back {
+    @apply absolute rounded-l-lg pr-5 z-20 h-full left-0 hover:bg-gradient-to-r hover:from-gray-400 transition-all duration-200 ease-in-out;
+  }
+
+  .carousel-left-caret {
+    @apply text-3xl z-30 text-tinker group-hover:text-charcoal group-hover:ml-2 transition-all duration-200;
+  }
+
+  .carousel-btn-next {
+    @apply absolute rounded-r-lg pl-5 z-20 h-full top-0 right-0 hover:bg-gradient-to-l hover:from-gray-400 transition-all duration-200 ease-in-out;
+  }
+
+  .carousel-right-caret {
+    @apply text-3xl z-30 text-tinker group-hover:text-charcoal group-hover:mr-2 transition-all duration-200;
   }
 }

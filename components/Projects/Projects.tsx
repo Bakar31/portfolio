@@ -1,23 +1,50 @@
 import { SiAppstore } from "react-icons/si";
 import { Section } from "../Section";
 import { projectGroups } from "./Projects.constants";
-import { BsFillArrowRightCircleFill } from "react-icons/bs";
+import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from "react-icons/bs";
 import { Card } from "./Card";
+import { ButtonBack, ButtonNext, CarouselProvider, Slide, Slider } from "pure-react-carousel";
+import { IProject } from "@/types";
 
-export const Projects = () => (
-  <Section title="Projects & Endeavors" Icon={SiAppstore}>
-    {projectGroups.map((group, i) => (
-      <div key={i}>
-        <div className="flex my-3 items-center gap-2 text-xl text-tinker font-bold">
-          <BsFillArrowRightCircleFill />
-          <span>{group.type}</span>
-        </div>
-        <div className="grid grid-cols-4 gap-2">
-          {group.items.map((project, k) => (
-            <Card key={k} project={project} />
+function projectMapper(projectGroups: IProject[]) {
+  const projects = [];
+  for (let i = 0; i < projectGroups.length; i++) {
+    for (let k = 0; k < projectGroups[i].items.length; k++) {
+      projects.push({ ...projectGroups[i].items[k], groupName: projectGroups[i].type });
+    }
+  }
+  return projects;
+}
+
+export const Projects = () => {
+  const projects = projectMapper(projectGroups);
+  return (
+    <Section title="Projects & Endeavors" Icon={SiAppstore}>
+      <CarouselProvider
+        visibleSlides={4}
+        totalSlides={projects.length}
+        step={1}
+        naturalSlideWidth={8}
+        naturalSlideHeight={9}
+        infinite={true}
+        touchEnabled={true}
+        dragEnabled={true}
+        className={"relative"}
+      >
+        <ButtonBack className="group carousel-btn-back">
+          <BsFillArrowLeftCircleFill className="carousel-left-caret" />
+        </ButtonBack>
+        <Slider className="p-5">
+          {projects.map((project, k) => (
+            <Slide index={k} key={k} className="">
+              <Card key={k} project={project} />
+            </Slide>
           ))}
-        </div>
-      </div>
-    ))}
-  </Section>
-);
+        </Slider>
+        <ButtonNext className="group carousel-btn-next">
+          <BsFillArrowRightCircleFill className="carousel-right-caret" />
+        </ButtonNext>
+      </CarouselProvider>
+    </Section>
+  );
+};

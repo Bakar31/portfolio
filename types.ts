@@ -6,9 +6,9 @@ export enum EResearchType {
 }
 
 export enum EProjectType {
-  OPEN_APP = "Open Source Applications",
-  OPEN_LIB = "Open Source Libraries",
-  PVT_REPO = "Private Repositories",
+  OPEN_APP = "Open Source Application",
+  OPEN_LIB = "Open Source Library",
+  PVT_REPO = "Private Repository",
 }
 
 export interface IGenericInstitute {
