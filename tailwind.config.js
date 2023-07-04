@@ -22,6 +22,9 @@ module.exports = {
         midnight: "#111821",
         charcoal: "#384F6C",
       },
+      fontFamily: {
+        sans: "Poppins",
+      },
     },
   },
   plugins: [require("flowbite/plugin")],
