@@ -75,3 +75,12 @@ export interface IProject {
 export interface ICourse extends ICardItem {
   institute: string;
 }
+
+export interface IActivity {
+  organization: string;
+  designation: string;
+  duration: string;
+  location: string;
+  skills: string[];
+  formers?: Omit<Partial<IActivity>, "organization" | "location">[];
+}

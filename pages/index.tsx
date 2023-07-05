@@ -1,3 +1,4 @@
+import { Cocurricular } from "@/components/Cocurricular";
 import { Coursework } from "@/components/Coursework";
 import { Education } from "@/components/Education";
 import { Experience } from "@/components/Experience";
@@ -19,6 +20,7 @@ export default function Home() {
         <Research />
         <Projects />
         <Coursework />
+        <Cocurricular />
       </div>
     </main>
   );
