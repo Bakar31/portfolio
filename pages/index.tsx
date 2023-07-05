@@ -1,3 +1,4 @@
+import { Coursework } from "@/components/Coursework";
 import { Education } from "@/components/Education";
 import { Experience } from "@/components/Experience";
 import { Intro } from "@/components/Intro";
@@ -17,6 +18,7 @@ export default function Home() {
         <Skills />
         <Research />
         <Projects />
+        <Coursework />
       </div>
     </main>
   );

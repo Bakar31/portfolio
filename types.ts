@@ -56,7 +56,7 @@ export interface IResearchProject {
   details: string[];
 }
 
-export interface IProjectItem {
+interface ICardItem {
   title: string;
   description: string;
   duration: string;
@@ -65,7 +65,13 @@ export interface IProjectItem {
   tags: string[];
 }
 
+export interface IProjectItem extends ICardItem {}
+
 export interface IProject {
   type: EProjectType;
   items: IProjectItem[];
+}
+
+export interface ICourse extends ICardItem {
+  institute: string;
 }

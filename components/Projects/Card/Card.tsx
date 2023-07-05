@@ -8,12 +8,15 @@ interface IProps {
 }
 
 export const Card = ({ project }: IProps) => (
-  <div className="card-bg group">
+  <div className="project-card-bg group">
     <Image src={project.image} alt={project.title} width={1280} height={640} />
     <div className="group-hover:-mt-5 bg-gray-50 transition-all duration-200">
-      <div className="-mt-3 ml-2 flex">
+      <div className="-mt-3 ml-2 flex gap-1">
         <Badge color={"success"} size={"xs"}>
           {project.groupName}
+        </Badge>
+        <Badge color={"lime"} size={"xs"}>
+          {project.duration}
         </Badge>
       </div>
       <p className="text-xl text-charcoal font-bold my-2 px-3 overflow-hidden truncate">{project.title}</p>
