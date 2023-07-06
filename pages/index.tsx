@@ -1,3 +1,4 @@
+import { Achievement } from "@/components/Achievement";
 import { Cocurricular } from "@/components/Cocurricular";
 import { Coursework } from "@/components/Coursework";
 import { Education } from "@/components/Education";
@@ -21,6 +22,7 @@ export default function Home() {
         <Projects />
         <Coursework />
         <Cocurricular />
+        <Achievement />
       </div>
     </main>
   );

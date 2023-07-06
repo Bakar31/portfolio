@@ -11,6 +11,11 @@ export enum EProjectType {
   PVT_REPO = "Private Repository",
 }
 
+export enum EAchievementType {
+  AWARD = "Award",
+  CERTIFICATE = "Certificate",
+}
+
 export interface IGenericInstitute {
   institute: string;
   location: string;
@@ -83,4 +88,16 @@ export interface IActivity {
   location: string;
   skills: string[];
   formers?: Omit<Partial<IActivity>, "organization" | "location">[];
+}
+
+export interface IAchievement {
+  title: string;
+  subtitle: string;
+  duration: string;
+  location: string;
+}
+
+export interface IAchievementList {
+  type: EAchievementType;
+  items: IAchievement[];
 }
