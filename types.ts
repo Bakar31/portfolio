@@ -109,3 +109,10 @@ export interface IVoluntary {
   location: string;
   image: string;
 }
+
+export interface IPublication {
+  title: string;
+  authors: string;
+  description: string;
+  duration: string;
+}
