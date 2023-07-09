@@ -101,3 +101,11 @@ export interface IAchievementList {
   type: EAchievementType;
   items: IAchievement[];
 }
+
+export interface IVoluntary {
+  title: string;
+  subtitle: string;
+  duration: string;
+  location: string;
+  image: string;
+}

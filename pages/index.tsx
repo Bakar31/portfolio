@@ -8,6 +8,7 @@ import { Projects } from "@/components/Projects";
 import { Research } from "@/components/Research";
 import { Sidebar } from "@/components/Sidebar/Sidebar";
 import { Skills } from "@/components/Skills";
+import { Volunteer } from "@/components/Volunteer";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <Coursework />
         <Cocurricular />
         <Achievement />
+        <Volunteer />
       </div>
     </main>
   );
