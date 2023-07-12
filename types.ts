@@ -16,18 +16,21 @@ export enum EAchievementType {
   CERTIFICATE = "Certificate",
 }
 
-export interface IGenericInstitute {
-  institute: string;
-  location: string;
+export interface IGenericTimeline {
   duration: string;
+  location: string;
+}
+
+export interface IBaseInstitute extends IGenericTimeline {
+  institute: string;
   logo: string;
 }
 
-export interface IEducation extends IGenericInstitute {
+export interface IEducation extends IBaseInstitute {
   degree: string;
 }
 
-export interface IExperience extends IGenericInstitute {
+export interface IExperience extends IBaseInstitute {
   position: string;
 }
 
@@ -52,17 +55,15 @@ export interface ISkillGroup {
   skills: ISkill[];
 }
 
-export interface IResearchProject {
+export interface IResearchProject extends IGenericTimeline {
   type: EResearchType;
   title: string;
   supervisor?: string;
   course?: string;
-  duration: string;
-  location: string;
   details: string[];
 }
 
-interface ICardItem {
+interface IBaseCardItem {
   title: string;
   description: string;
   duration: string;
@@ -71,31 +72,27 @@ interface ICardItem {
   tags: string[];
 }
 
-export interface IProjectItem extends ICardItem {}
+export interface IProjectItem extends IBaseCardItem {}
 
-export interface IProject {
+export interface IProjectGroup {
   type: EProjectType;
   items: IProjectItem[];
 }
 
-export interface ICourse extends ICardItem {
+export interface ICourseItem extends IBaseCardItem {
   institute: string;
 }
 
-export interface IActivity {
+export interface IActivity extends IGenericTimeline {
   organization: string;
   designation: string;
-  duration: string;
-  location: string;
   skills: string[];
   formers?: Omit<Partial<IActivity>, "organization" | "location">[];
 }
 
-export interface IAchievement {
+export interface IAchievement extends IGenericTimeline {
   title: string;
   subtitle: string;
-  duration: string;
-  location: string;
 }
 
 export interface IAchievementList {
@@ -103,11 +100,9 @@ export interface IAchievementList {
   items: IAchievement[];
 }
 
-export interface IVoluntary {
+export interface IVoluntary extends IGenericTimeline {
   title: string;
   subtitle: string;
-  duration: string;
-  location: string;
   image: string;
 }
 

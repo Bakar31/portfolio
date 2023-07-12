@@ -1,6 +1,6 @@
-import { EProjectType, IProject } from "@/types";
+import { EProjectType, IProjectGroup } from "@/types";
 
-export const projectGroups: IProject[] = [
+export const projectGroups: IProjectGroup[] = [
   {
     type: EProjectType.OPEN_APP,
     items: [

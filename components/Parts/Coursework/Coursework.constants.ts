@@ -1,6 +1,6 @@
-import { ICourse } from "@/types";
+import { ICourseItem } from "@/types";
 
-export const courseworks: ICourse[] = [
+export const courseworks: ICourseItem[] = [
   {
     title: "Algorithmic Toolbox",
     description: "Data Structures & Algorithms Specialization",

@@ -3,10 +3,10 @@ import { projectGroups } from "./Projects.constants";
 import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from "react-icons/bs";
 import { Card } from "./Card";
 import { ButtonBack, ButtonNext, CarouselProvider, Slide, Slider } from "pure-react-carousel";
-import { IProject } from "@/types";
+import { IProjectGroup } from "@/types";
 import { Section } from "@/components/Section";
 
-function projectMapper(projectGroups: IProject[]) {
+function projectMapper(projectGroups: IProjectGroup[]) {
   const projects = [];
   for (let i = 0; i < projectGroups.length; i++) {
     for (let k = 0; k < projectGroups[i].items.length; k++) {

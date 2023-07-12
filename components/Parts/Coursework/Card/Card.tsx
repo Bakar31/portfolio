@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { Badge, Button } from "flowbite-react";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import { ICourse } from "@/types";
+import { ICourseItem } from "@/types";
 
 interface IProps {
-  course: ICourse;
+  course: ICourseItem;
 }
 
 export const Card = ({ course }: IProps) => (
