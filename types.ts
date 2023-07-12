@@ -20,6 +20,7 @@ export interface IGenericInstitute {
   institute: string;
   location: string;
   duration: string;
+  logo: string;
 }
 
 export interface IEducation extends IGenericInstitute {

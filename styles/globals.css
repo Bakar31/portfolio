@@ -178,4 +178,20 @@
     transition-all 
     duration-200;
   }
+
+  .hoverable-card {
+    @apply flex
+    gap-4
+    mt-2
+    items-center 
+    text-xs 
+    shadow-sm 
+  bg-gray-50 
+    rounded-lg 
+    p-5 
+  hover:bg-tinker 
+    hover:shadow-2xl 
+    transition-all 
+    duration-200;
+  }
 }
