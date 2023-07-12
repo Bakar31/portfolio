@@ -61,12 +61,15 @@
   }
 
   .details-text {
-    @apply ml-5 
+    @apply flex
+    items-center
+    gap-2 
     hover:pl-2 
     transition-all 
     duration-200 
     ease-in-out 
-    hover:font-normal;
+    hover:font-normal
+    group-hover:text-whiteboard;
   }
 
   .project-card-bg {
