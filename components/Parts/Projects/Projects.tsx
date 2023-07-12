@@ -1,10 +1,10 @@
 import { SiAppstore } from "react-icons/si";
-import { Section } from "../Section";
 import { projectGroups } from "./Projects.constants";
 import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from "react-icons/bs";
 import { Card } from "./Card";
 import { ButtonBack, ButtonNext, CarouselProvider, Slide, Slider } from "pure-react-carousel";
 import { IProject } from "@/types";
+import { Section } from "@/components/Section";
 
 function projectMapper(projectGroups: IProject[]) {
   const projects = [];

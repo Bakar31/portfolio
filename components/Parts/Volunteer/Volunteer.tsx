@@ -1,7 +1,7 @@
 import { FaHandsHelping } from "react-icons/fa";
-import { Section } from "../Section";
 import { voluteerings } from "./Volunteer.constants";
 import Image from "next/image";
+import { Section } from "@/components/Section";
 
 export const Volunteer = () => (
   <Section title="Voluntary Activities" Icon={FaHandsHelping}>

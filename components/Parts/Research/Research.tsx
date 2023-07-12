@@ -1,7 +1,7 @@
 import { ImLab } from "react-icons/im";
-import { Section } from "../Section";
 import { researches } from "./Research.constants";
 import { FaBookOpen, FaClock, FaMapMarkerAlt } from "react-icons/fa";
+import { Section } from "@/components/Section";
 
 export const Research = () => (
   <Section title="Academic Research Activities" Icon={ImLab}>

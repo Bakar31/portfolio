@@ -1,9 +1,9 @@
-import { Section } from "../Section";
 import { achievements } from "./Achievement.constants";
 import { BsFillTrophyFill } from "react-icons/bs";
 import { EAchievementType } from "@/types";
 import { FaCertificate } from "react-icons/fa";
 import { GiLaurelsTrophy } from "react-icons/gi";
+import { Section } from "@/components/Section";
 
 export const Achievement = () => (
   <Section title="Achievements" Icon={GiLaurelsTrophy}>
@@ -17,9 +17,7 @@ export const Achievement = () => (
               </div>
               <span className="w-12">{item.duration}</span>
               <span className="font-bold">{item.title}</span>
-              <span className="achievement-card-subtitle">
-                {item.subtitle}
-              </span>
+              <span className="achievement-card-subtitle">{item.subtitle}</span>
               <span>{item.location}</span>
             </div>
           ))}

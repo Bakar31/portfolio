@@ -1,9 +1,9 @@
 import { GiBiceps } from "react-icons/gi";
-import { Section } from "../Section";
 import { activities } from "./Cocurricular.constants";
 import { FaClock, FaMapMarkerAlt } from "react-icons/fa";
 import { Badge } from "flowbite-react";
 import { BsFillBriefcaseFill } from "react-icons/bs";
+import { Section } from "@/components/Section";
 
 export const Cocurricular = () => (
   <Section title="Extracurricular Activities" Icon={GiBiceps}>

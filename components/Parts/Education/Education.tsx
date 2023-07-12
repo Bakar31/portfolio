@@ -1,6 +1,6 @@
 import { FaClock, FaGraduationCap, FaMapMarkerAlt } from "react-icons/fa";
 import { educations } from "./Education.constants";
-import { Section } from "../Section";
+import { Section } from "@/components/Section";
 
 export const Education = () => (
   <Section Icon={FaGraduationCap} title="Educational Background">

@@ -1,7 +1,7 @@
 import { PiCertificateFill } from "react-icons/pi";
-import { Section } from "../Section";
 import { courseworks } from "./Coursework.constants";
 import { Card } from "./Card";
+import { Section } from "@/components/Section";
 
 export const Coursework = () => (
   <Section title="Courseworks" Icon={PiCertificateFill}>

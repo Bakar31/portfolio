@@ -1,6 +1,6 @@
 import { SiGooglescholar } from "react-icons/si";
-import { Section } from "../Section";
 import { publications } from "./Publication.constants";
+import { Section } from "@/components/Section";
 
 export const Publication = () => (
   <Section title="Publications" Icon={SiGooglescholar}>

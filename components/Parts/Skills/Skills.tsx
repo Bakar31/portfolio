@@ -1,7 +1,7 @@
 import { ImPower } from "react-icons/im";
-import { Section } from "../Section";
 import { skillGroups } from "./Skills.constants";
 import { Tooltip } from "flowbite-react";
+import { Section } from "@/components/Section";
 
 export const Skills = () => (
   <Section Icon={ImPower} title="Expertises">
