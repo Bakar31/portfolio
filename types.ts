@@ -100,9 +100,7 @@ export interface IAchievementList {
   items: IAchievement[];
 }
 
-export interface IVoluntary extends IGenericTimeline {
-  title: string;
-  subtitle: string;
+export interface IVoluntary extends IAchievement {
   image: string;
 }
 
