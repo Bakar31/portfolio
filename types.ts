@@ -28,7 +28,7 @@ export interface IEducation extends IGenericInstitute {
 }
 
 export interface IExperience extends IGenericInstitute {
-  positon: string;
+  position: string;
 }
 
 export interface IContactInfo {

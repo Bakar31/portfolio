@@ -9,29 +9,29 @@ export const Research = () => (
     {researches.map((research, i) => (
       <div key={i} className="hoverable-card group">
         <div className="flex-grow flex flex-col">
-          <span className="text-tinker group-hover:text-whiteboard font-bold text-xl">{research.type}</span>
-          <span className="font-bold text-charcoal group-hover:text-whiteboard">{research.title}</span>
+          <span className="hoverable-card-title">{research.type}</span>
+          <span className="hoverable-card-subtitle">{research.title}</span>
           <div className="flex flex-col text-xs text-pencil mt-3 gap-1 font-light">
             {research.details.map((item, i) => (
               <div key={i} className="details-text">
-                <BiRightArrowAlt />
-                <span>{item}</span>
+                <BiRightArrowAlt className="hoverable-card-icon" />
+                <span className="hoverable-card-text">{item}</span>
               </div>
             ))}
           </div>
         </div>
-        <div className="flex flex-col gap-1 text-xs font-light mt-2 w-64">
+        <div className="flex flex-col gap-2 text-xs font-light w-64">
           <div className="flex gap-2 items-center">
-            <FaMapMarkerAlt className="text-tinker group-hover:text-whiteboard" />
-            <span className="text-charcoal group-hover:text-whiteboard">{research.location}</span>
+            <FaMapMarkerAlt className="hoverable-card-icon" />
+            <span className="hoverable-card-text">{research.location}</span>
           </div>
           <div className="flex gap-2 items-center">
-            <FaClock className="text-tinker group-hover:text-whiteboard" />
-            <span className="text-charcoal group-hover:text-whiteboard">{research.duration}</span>
+            <FaClock className="hoverable-card-icon" />
+            <span className="hoverable-card-text">{research.duration}</span>
           </div>
           <div className="flex gap-2 items-center">
-            <FaBookOpen className="text-tinker group-hover:text-whiteboard" />
-            <span className="text-charcoal group-hover:text-whiteboard">
+            <FaBookOpen className="hoverable-card-icon" />
+            <span className="hoverable-card-text">
               {research.supervisor && `Supervised by: ${research.supervisor}`}
               {research.course && `${research.course}`}
             </span>
