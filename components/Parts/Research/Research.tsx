@@ -11,14 +11,14 @@ export const Research = () => (
         <div className="flex-grow flex flex-col">
           <span className="hoverable-card-title">{research.type}</span>
           <span className="hoverable-card-subtitle">{research.title}</span>
-          <div className="flex flex-col text-xs text-pencil mt-3 gap-1 font-light">
+          <ul className="research-description">
             {research.details.map((item, i) => (
-              <div key={i} className="details-text">
-                <BiRightArrowAlt className="hoverable-card-icon" />
-                <span className="hoverable-card-text">{item}</span>
-              </div>
+              <li key={i} className="details-text">
+                <BiRightArrowAlt className="hoverable-card-icon w-1/12 sm:w-auto" />
+                <span className="hoverable-card-text w-11/12 sm:w-auto">{item}</span>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
         <div className="flex flex-col gap-2 text-xs font-light w-64">
           <div className="flex gap-2 items-center">

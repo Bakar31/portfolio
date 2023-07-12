@@ -60,15 +60,27 @@
     ease-in-out;
   }
 
+  .research-description {
+    @apply h-0
+    overflow-hidden
+    group-hover:h-auto
+    sm:h-auto
+    flex
+    flex-col
+    mt-3
+    gap-1
+    font-light;
+  }
+
   .details-text {
     @apply flex
-    items-center
+    sm:items-center
     gap-2 
-    hover:pl-2 
+    sm:hover:pl-2 
     transition-all 
     duration-200 
     ease-in-out 
-    hover:font-normal;
+    sm:hover:font-normal;
   }
 
   .project-card-bg {
@@ -84,6 +96,38 @@
     h-72 
     shadow-lg 
     relative;
+  }
+
+  .project-card-body {
+    @apply group-hover:-mt-5
+  bg-gray-50
+    transition-all
+    duration-200
+    text-center
+    sm:text-left;
+  }
+
+  .project-card-tags {
+    @apply flex
+    gap-1
+    m-0
+    group-hover:mt-2
+    transition-all
+    duration-300
+    ml-2
+    mt-20
+    justify-center
+    sm:justify-start;
+  }
+
+  .project-card-link {
+    @apply absolute
+    bottom-0
+    p-2
+    left-1/2
+    -translate-x-1/2
+    sm:left-0
+    sm:translate-x-0;
   }
 
   .carousel-btn-back {
@@ -158,6 +202,7 @@
     @apply flex
     mt-2
     items-center 
+    justify-between
     text-xs 
     shadow-sm 
   bg-gray-50 
@@ -172,8 +217,8 @@
   }
 
   .achievement-card-subtitle {
-    @apply flex-grow 
-    ml-2 
+    @apply sm:flex-grow 
+    sm:ml-2 
     font-light 
   text-charcoal 
   group-hover:text-whiteboard 
@@ -183,9 +228,12 @@
 
   .hoverable-card {
     @apply flex
+    flex-col
+    sm:flex-row 
     gap-4
     mt-2
-    items-center 
+    items-start
+    sm:items-center 
     text-xs 
     shadow-sm 
   bg-gray-50 
@@ -201,7 +249,10 @@
     @apply text-tinker 
     group-hover:text-whiteboard 
     font-bold 
-    text-xl 
+    text-lg
+    overflow-hidden
+    truncate
+    sm:text-xl 
     transition-all 
     duration-500;
   }

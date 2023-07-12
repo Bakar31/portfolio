@@ -4,12 +4,8 @@ import { Tooltip } from "flowbite-react";
 import avatar from "@/public/images/portrait.jpg";
 import { contactInfos, socialLinks } from "./Sidebar.constants";
 
-interface IProps {
-  className: string;
-}
-
-export const Sidebar = ({ className }: IProps) => (
-  <div className={className}>
+export const Sidebar = () => (
+  <div className="flex w-full sm:w-72 min-h-screen bg-tinker  flex-col p-2 sm:fixed">
     <span className="w-full text-center font-black text-2xl my-2">Jalal Uddin</span>
     <Image
       alt="Jalal Uddin Avatar"

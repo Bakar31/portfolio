@@ -9,11 +9,11 @@ interface IProps {
 export const Section = ({ children, Icon, title }: PropsWithChildren<IProps>) => (
   <>
     <div className="mt-24 flex flex-col">
-      <div className="text-3xl font-bold pl-4 flex gap-2 items-center">
-        <Icon className="text-tinker" />
-        <span>{title}</span>
+      <div className="sm:pl-4 flex flex-col sm:flex-row gap-2 items-center">
+        <Icon className="text-5xl sm:text-3xl text-tinker" />
+        <span className="text-2xl sm:text-3xl font-bold text-charcoal text-center">{title}</span>
       </div>
     </div>
-    <div className="ml-14">{children}</div>
+    <div className="sm:ml-14">{children}</div>
   </>
 );

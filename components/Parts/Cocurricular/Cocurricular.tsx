@@ -9,10 +9,10 @@ export const Cocurricular = () => (
   <Section title="Extracurricular Activities" Icon={GiBiceps}>
     {activities.map((activity, i) => (
       <div key={i} className="hoverable-card group">
-        <div className="flex flex-col w-3/6">
+        <div className="flex flex-col w-full sm:w-3/6">
           <span className="hoverable-card-title">{activity.designation}</span>
           <span className="hoverable-card-subtitle">{activity.organization}</span>
-          <div className="flex gap-1 mt-2">
+          <div className="flex flex-wrap gap-1 mt-2">
             {activity.skills.map((item, k) => (
               <Badge color={"success"} key={k}>
                 {item}
@@ -20,7 +20,7 @@ export const Cocurricular = () => (
             ))}
           </div>
         </div>
-        <div className="flex flex-col w-2/6 gap-2">
+        <div className="flex flex-col sm:w-2/6 gap-2">
           {activity.formers?.map((exActivity, x) => (
             <div className="flex flex-col" key={x}>
               <div className="flex items-center gap-2">
@@ -34,7 +34,7 @@ export const Cocurricular = () => (
             </div>
           ))}
         </div>
-        <div className="flex flex-col gap-2 text-xs font-light w-1/6">
+        <div className="flex flex-col gap-2 text-xs font-light sm:w-1/6">
           <div className="flex gap-2 items-center">
             <FaMapMarkerAlt className="hoverable-card-icon" />
             <span className="hoverable-card-text">{activity.location}</span>
