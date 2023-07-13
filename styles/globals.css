@@ -250,8 +250,6 @@
     group-hover:text-whiteboard 
     font-bold 
     text-lg
-    overflow-hidden
-    truncate
     sm:text-xl 
     transition-all 
     duration-500;

@@ -10,7 +10,7 @@ export const Cocurricular = () => (
     {activities.map((activity, i) => (
       <div key={i} className="hoverable-card group">
         <div className="flex flex-col w-full sm:w-3/6">
-          <span className="hoverable-card-title">{activity.designation}</span>
+          <span className="hoverable-card-title overflow-hidden truncate">{activity.designation}</span>
           <span className="hoverable-card-subtitle">{activity.organization}</span>
           <div className="flex flex-wrap gap-1 mt-2">
             {activity.skills.map((item, k) => (

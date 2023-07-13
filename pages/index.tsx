@@ -13,7 +13,7 @@ import { Sidebar } from "@/components/Sidebar";
 
 export default function Home() {
   return (
-    <main className="w-full text-whiteboard">
+    <main>
       <Sidebar />
       <div className="ml-0 sm:ml-72 min-h-screen bg-whiteboard text-midnight flex flex-col p-10">
         <Intro />
