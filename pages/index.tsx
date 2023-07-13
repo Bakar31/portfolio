@@ -3,6 +3,7 @@ import { Cocurricular } from "@/components/Parts/Cocurricular";
 import { Coursework } from "@/components/Parts/Coursework";
 import { Education } from "@/components/Parts/Education";
 import { Experience } from "@/components/Parts/Experience";
+import { Footer } from "@/components/Parts/Footer";
 import { Intro } from "@/components/Parts/Intro";
 import { Projects } from "@/components/Parts/Projects";
 import { Publication } from "@/components/Parts/Publication";
@@ -15,7 +16,7 @@ export default function Home() {
   return (
     <main>
       <Sidebar />
-      <div className="ml-0 sm:ml-72 min-h-screen bg-whiteboard text-midnight flex flex-col p-10">
+      <div className="container-main">
         <Intro />
         <Education />
         <Experience />
@@ -28,6 +29,7 @@ export default function Home() {
         <Volunteer />
         <Publication />
       </div>
+      <Footer />
     </main>
   );
 }

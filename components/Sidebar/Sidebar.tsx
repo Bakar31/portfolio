@@ -5,7 +5,7 @@ import avatar from "@/public/images/portrait.jpg";
 import { contactInfos, socialLinks } from "./Sidebar.constants";
 
 export const Sidebar = () => (
-  <div className="flex w-screen sm:w-72 min-h-screen bg-tinker  flex-col p-2 sm:fixed text-whiteboard">
+  <div className="sidebar-main">
     <h1 className="text-center font-black text-2xl my-2">Jalal Uddin</h1>
     <Image
       alt="Jalal Uddin Avatar"
