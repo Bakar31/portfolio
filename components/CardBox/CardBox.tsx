@@ -32,11 +32,11 @@ export const CardBox = ({ item, buttonText }: IProps) => (
           </Badge>
         ))}
       </div>
-      <a className="project-card-link" href={item.link} target="_blank">
-        <Button size={"xs"} pill className="bg-tinker hover:bg-linter w-60 sm:w-full">
+      <div className="absolute bottom-0 p-2 left-1/2 -translate-x-1/2 sm:left-0 sm:translate-x-0">
+        <Button size={"xs"} pill className="bg-tinker hover:bg-linter w-48 sm:w-auto" href={item.link} target="_blank">
           <FaExternalLinkAlt className="mr-2" /> <span>{buttonText}</span>
         </Button>
-      </a>
+      </div>
     </div>
   </div>
 );

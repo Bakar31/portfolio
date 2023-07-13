@@ -121,13 +121,9 @@
   }
 
   .project-card-link {
-    @apply absolute
-    bottom-0
-    p-2
-    left-1/2
-    -translate-x-1/2
-    sm:left-0
-    sm:translate-x-0;
+    @apply bg-tinker
+    w-48
+    sm:w-auto;
   }
 
   .carousel-btn-back {

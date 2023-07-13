@@ -16,11 +16,11 @@ export const Intro = () => (
       of the latest industry trends and continuously honing my skills through self-directed learning and participation.
     </p>
     <div className="flex gap-4 my-4 justify-center sm:justify-start">
-      <Button className="bg-tinker hover:bg-linter">
+      <Button className="bg-tinker hover:bg-linter" href="mailto:dgvai.hridoy@gmail.com">
         <HiDocumentText className="mr-2" />
         <p>Email Me</p>
       </Button>
-      <Button className="bg-pen hover:bg-midnight">
+      <Button className="bg-pen hover:bg-midnight" href="https://gdpd.xyz/dgvai" target="_blank">
         <FaTelegramPlane className="mr-2" />
         <p>Leave a note</p>
       </Button>
