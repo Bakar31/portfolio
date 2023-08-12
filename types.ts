@@ -61,6 +61,7 @@ export interface IResearchProject extends IGenericTimeline {
   supervisor?: string;
   course?: string;
   details: string[];
+  image: string;
 }
 
 interface IBaseCardItem {

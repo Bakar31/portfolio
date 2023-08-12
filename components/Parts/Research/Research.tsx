@@ -3,12 +3,20 @@ import { researches } from "./Research.constants";
 import { FaBookOpen, FaClock, FaMapMarkerAlt } from "react-icons/fa";
 import { Section } from "@/components/Section";
 import { BiRightArrowAlt } from "react-icons/bi";
+import Image from "next/image";
 
 export const Research = () => (
   <Section title="Academic Research Activities" Icon={ImLab}>
     {researches.map((research, i) => (
-      <div key={i} className="hoverable-card group">
-        <div className="flex-grow flex flex-col">
+      <div key={i} className="hoverable-card group researches-card">
+        <Image
+          src={research.image}
+          alt={research.title}
+          width={150}
+          height={150}
+          className="sm:w-2/12 rounded-lg group-hover:shadow-xl hover:scale-110 transition-all duration-200"
+        />
+        <div className="flex-grow flex flex-col sm:w-6/12">
           <span className="hoverable-card-title">{research.type}</span>
           <span className="hoverable-card-subtitle">{research.title}</span>
           <ul className="research-description">
@@ -20,7 +28,7 @@ export const Research = () => (
             ))}
           </ul>
         </div>
-        <div className="flex flex-col gap-2 text-xs font-light w-64">
+        <div className="flex flex-col gap-2 text-xs font-light sm:w-4/12 my-auto">
           <div className="flex gap-2 items-center">
             <FaMapMarkerAlt className="hoverable-card-icon" />
             <span className="hoverable-card-text">{research.location}</span>

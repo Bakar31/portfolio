@@ -306,4 +306,9 @@
     transition-all
     duration-500;
   }
+
+  .researches-card {
+    @apply items-center
+    sm:items-start
+  }
 }
