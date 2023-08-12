@@ -6,7 +6,7 @@ import { BiRightArrowAlt } from "react-icons/bi";
 import Image from "next/image";
 
 export const Research = () => (
-  <Section title="Academic Research Activities" Icon={ImLab}>
+  <Section title="Research Activities" Icon={ImLab}>
     {researches.map((research, i) => (
       <div key={i} className="hoverable-card group researches-card">
         <Image

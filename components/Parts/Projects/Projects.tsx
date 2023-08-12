@@ -19,7 +19,7 @@ function projectMapper(projectGroups: IProjectGroup[]) {
 export const Projects = () => {
   const projects = projectMapper(projectGroups);
   return (
-    <Section title="Projects & Endeavors" Icon={SiAppstore}>
+    <Section title="Applications & Libraries" Icon={SiAppstore}>
       <Slider maxLength={projects.length}>
         {projects.map((project, k) => (
           <Slide index={k} key={k}>

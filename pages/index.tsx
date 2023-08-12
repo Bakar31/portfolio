@@ -22,12 +22,12 @@ export default function Home() {
         <Experience />
         <Skills />
         <Research />
+        <Publication />
         <Projects />
         <Coursework />
         <Cocurricular />
         <Achievement />
         <Volunteer />
-        <Publication />
       </div>
       <Footer />
     </main>
