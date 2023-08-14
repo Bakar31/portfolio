@@ -5,6 +5,12 @@ export const achievements: IAchievementList[] = [
     type: EAchievementType.AWARD,
     items: [
       {
+        title: "Ranked: 237",
+        subtitle: "Robi Datathon 2.0: Pre-Assessment",
+        duration: "2022",
+        location: "Kaggle Competition",
+      },
+      {
         title: "Team MVP",
         subtitle: "Robotic Society of RUET",
         duration: "2022",
