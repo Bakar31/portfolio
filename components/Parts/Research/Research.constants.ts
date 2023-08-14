@@ -15,6 +15,19 @@ export const researches: IResearchProject[] = [
     ],
   },
   {
+    type: EResearchType.DATA,
+    title: "DOTA2 Winner Team Prediction based on Stacked Bidirectional LSTM Network",
+    supervisor: "Md. Mehedi Hasan, Lecturer, RUET",
+    duration: "2022",
+    location: "RUET, Rajshahi",
+    image: "https://i.ibb.co/MgcT9Sn/dota2.png",
+    details: [
+      "Match data of 27000 professional matches were collected from OpenAPI.",
+      "Designed a Bidirectional LSTM network to predict the winner.",
+      "Built a web application out of that model to predict winner real-time",
+    ],
+  },
+  {
     type: EResearchType.LAB,
     title: "An IoT Based Embedded System for Automated Railway Gate Control and Monitoring",
     course: "Embedded System Sessional Project I",

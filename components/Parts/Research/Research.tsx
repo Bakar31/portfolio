@@ -22,8 +22,8 @@ export const Research = () => (
           <ul className="research-description">
             {research.details.map((item, i) => (
               <li key={i} className="details-text">
-                <BiRightArrowAlt className="hoverable-card-icon w-1/12 sm:w-auto" />
-                <span className="hoverable-card-text w-11/12 sm:w-auto">{item}</span>
+                <BiRightArrowAlt className="hoverable-card-icon w-1/12 sm:w-3" />
+                <span className="hoverable-card-text w-11/12">{item}</span>
               </li>
             ))}
           </ul>

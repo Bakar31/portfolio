@@ -2,6 +2,7 @@ import { IconType } from "react-icons";
 
 export enum EResearchType {
   THESIS = "Undergraduate Thesis",
+  DATA = "Data Analysis Research",
   LAB = "Sessional Project",
 }
 
