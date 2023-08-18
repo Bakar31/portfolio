@@ -5,6 +5,14 @@ export const projectGroups: IProjectGroup[] = [
     type: EProjectType.OPEN_APP,
     items: [
       {
+        title: "YTubeGPT",
+        description: "AI assistant for your YouTube experience",
+        duration: "2023",
+        link: "https://github.com/dgvai/YTube-GPT",
+        image: "https://i.ibb.co/K0GT2pQ/YTubeGPT.png",
+        tags: ["Chrome Extension", "GPT-3", "OpenAI"],
+      },
+      {
         title: "Wordle with Friends",
         description: "Multiplayer version of trending Wordle game",
         duration: "2022",
