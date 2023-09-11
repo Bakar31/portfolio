@@ -28,6 +28,12 @@ export const achievements: IAchievementList[] = [
     type: EAchievementType.CERTIFICATE,
     items: [
       {
+        title: "Block Chain Training",
+        subtitle: "Bangabandhu Sheikh Mujib Hi-Tech Park",
+        duration: "2023",
+        location: "Bangladesh",
+      },
+      {
         title: "Industrial Training",
         subtitle: "Bangladesh Steel Re-Rolling Mills Ltd.",
         duration: "2019",
